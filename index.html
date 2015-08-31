@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Mike J Williams</title>
+
+    <!-- Import our custom CSS -->
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/text.css">
+    <link type="text/css" rel="stylesheet" href="css/skills.css">
+    <link type="text/css" rel="stylesheet" href="css/cards.css">
+
+  </head>
+
+  <body ng-controller="MainController" class="blue">
+    <!-- body templating  -->
+    <div class="row headerBackground">
+      <!-- start header band -->
+      <div class="container valign-wrapper">
+
+        <!-- profile picture -->
+        <div class="col s4">
+          <div class"row">
+            <img src="images/profile.jpg" alt="" class="circle responsive-img z-depth-2 border-white"> <!-- notice the "circle" class -->
+          </div>
+        </div>
+
+        <!-- name,education,ge-business,location -->
+        <div class="col s8">
+            <div class"row">
+              <h1 class="nameText gv center-align">{{name}}</h1>
+            </div>
+            <div class"row valign-wrapper">
+              <div class="col s3">
+                <div class="container iconPadding">
+                  <img src="images/ge.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
+                </div>
+                <div class="hIcon nameText roboto fw-200 center-align">{{geBusiness1}}</div>
+                <div class="hIcon secondLine nameText noPadding roboto fw-200 center-align">{{geBusiness2}}</div>
+              </div>
+              <div class="col s3">
+                <div class="container iconPadding">
+                  <img src="images/locationIcon.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
+                </div>
+                <div class="hIcon nameText roboto fw-200 center-align">{{locationCityState}}</div>
+                <div class="hIcon secondLine nameText noPadding roboto fw-200 center-align">{{locationCountry}}</div>
+              </div>
+              <div class="col s3">
+                <div class="container iconPadding">
+                  <img src="images/education.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
+                </div>
+                <div class="hIcon nameText roboto fw-200 center-align">{{education1}}</div>
+                <div class="hIcon secondLine nameText noPadding roboto fw-200 center-align">{{education2}}</div>
+              </div>
+              <div class="col s3">
+                <div class="container iconPadding">
+                  <img src="images/Home.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
+                </div>
+                <div class="hIcon nameText roboto fw-200 center-align">{{homeCityState}}</div>
+                <div class="hIcon secondLine nameText noPadding roboto fw-200 center-align">{{homeCountry}}</div>
+              </div>
+          </div>
+        </div>
+
+      <!-- end header band -->
+      </div>
+    </div>
+
+    <!-- Fun facts/Personalize this part -->
+    <div class="rowAboutMe row grey lighten-3">
+      <div class="col s12">
+        <h3 class="aboutMe roboto fw-100">About Me</h3>
+        <div class="row">
+          <div class="col s4" ng-repeat="fact in facts">
+            <div class="card small">
+              <div class="card-image">
+                <img src="{{fact.imageName}}">
+                <span class="card-title">{{fact.title}}</span>
+              </div>
+              <div class="card-content">
+                <p class="roboto fw-400">{{fact.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote-->
+    <div class="row valign-wrapper">
+      <div class="col s7">
+        <!-- <div class="container"> -->
+          <div class="nameText quote hIcon roboto fw-200">{{quote}}</div>
+          <h6 class="nameText quote roboto fw-200">{{reference}}</h6>
+        <!-- </div> -->
+      </div>
+      <div class="col s5">
+          <div class="card-panel">
+            <h3 class="roboto fw-100">Clever Q&A</h3>
+            <div class="row" ng-repeat="qa in qas">
+              <div class="hIcon roboto fw-400">{{qa.question}}</div>
+              <div class="hIcon roboto fw-100">{{qa.answer}}</div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end body templating -->
+
+    <!--Import libraries here-->
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script>
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Michael Williams Personal Website",
+  "version": "0.0.1",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Williams <mjwilli31@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "karma": "^0.12.22",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "protractor": "^1.8.0"
+  }
+}

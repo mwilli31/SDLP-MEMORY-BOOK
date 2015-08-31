@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+
+.roboto {
+    font-family: "Roboto";
+}
+
+.gv {
+    font-family: "Great Vibes";
+}
+
+.fw-100 { font-weight: 100; }
+.fw-200 { font-weight: 200; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-700 { font-weight: 700; }
+.fw-900 { font-weight: 900; }
+
+.material-icons {
+  font-size: 40px;
+}
+
+.mainGradient {
+  background: -webkit-linear-gradient(#6699FF, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#6699FF, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#6699FF, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#6699FF, white); /* Standard syntax */
+}
+
+.headerBackground {
+  background-color: #bbdefb;
+  margin-bottom: 0px;
+  height: 300px;
+}
+
+.noPadding {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.nameText {
+  color: #FFFFFF;
+}
+
+.aboutMe {
+  color: #424242;
+}
+
+.programText{
+  color: #6699FF;
+}
+
+.currentLocationText{
+  color: #3366CC;
+}
+
+.lightText {
+  color: white;
+}
+
+.iconPadding {
+  padding: 0px;
+}
+
+.hIcon {
+  font-size: 20px;
+}
+
+.secondLine {
+  margin-top: 5px;
+}
+
+.quote {
+  margin-left: 10px;
+}
